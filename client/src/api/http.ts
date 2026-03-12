@@ -2,7 +2,7 @@ import axios, {AxiosError} from 'axios';
 import type {ApiError, ValidationError} from "./types.ts";
 
 export const $http = axios.create({
-  baseURL: `${import.meta.env.VITE_API_URL}/api`,
+  baseURL: `${import.meta.env.VITE_API_URL || ''}/api`,
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
