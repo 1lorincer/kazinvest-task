@@ -14,3 +14,18 @@ npm run dev
 ```
 npm run build
 ```
+
+<h2>Server часть</h2>
+
+<b>Зависимости</b>
+```
+cd ./server && npm i
+```
+<b>Локальный запуск (dev)</b>
+```
+npm run dev
+```
+<b>Prod запуск</b>
+```
+npm run start
+```
