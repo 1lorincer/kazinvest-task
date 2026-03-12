@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-blue-900 p-24;
+}
+@layer base {
+  html, body, #app { height: 100%; }
+}
