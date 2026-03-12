@@ -14,7 +14,7 @@ export function createApp() {
     app.use(express.json())
     app.use("/api", chatRoutes);
     app.use(express.static(clientDist))
-    app.get('*', (req, res, next) => {
+    app.get('*splat', (req, res, next) => {
         res.sendFile(path.join(clientDist, 'index.html'), (err) => {
             if (err) next()
         })
